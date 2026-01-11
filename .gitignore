@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+project.md
+decisions.md
+Data Science Final Project.pdf
+reports/grader_report.md
+reports/employee_attrition_presentation.pptx
+reports/presentation_outline.md
+reports/presentation_demo_script.md

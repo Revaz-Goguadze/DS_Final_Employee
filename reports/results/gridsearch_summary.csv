@@ -1,0 +1,5 @@
+model,best_cv_f1,best_params
+logistic_regression,0.5303760295500952,{'classifier__C': 0.1}
+random_forest,0.4985493230174081,"{'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 200}"
+gradient_boosting,0.538452036942603,"{'classifier__learning_rate': 0.1, 'classifier__max_depth': 3, 'classifier__n_estimators': 200}"
+decision_tree,0.39404539800995025,"{'classifier__max_depth': 5, 'classifier__min_samples_leaf': 4, 'classifier__min_samples_split': 10}"
