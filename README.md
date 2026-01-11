@@ -3,6 +3,9 @@
 ## Project Overview
 This project analyzes and predicts employee attrition using the IBM HR Analytics dataset. The goal is to identify the factors most associated with turnover and build models that can flag at-risk employees.
 
+## AI Assistance Disclosure
+AI tools were used for learning, debugging, and testing assistance. All code and analysis were reviewed and validated by the author.
+
 ## Solo Team
 Revaz Goguadze
 
@@ -94,20 +97,3 @@ All models use SMOTE for class imbalance and an 80/20 stratified split (random_s
 - Data quality report: `reports/data_quality_report.md`
 - Data dictionary: `reports/data_dictionary.md`
 - Notebooks: `notebooks/01_data_exploration.ipynb` through `notebooks/04_machine_learning.ipynb`
-
-## Notes
-- The dataset has class imbalance (attrition is the minority class). SMOTE is used to improve recall for attrition.
-- Non-informative columns (EmployeeNumber, Over18, StandardHours, EmployeeCount) are removed in modeling.
-- IQR-based outlier flags (`*_outlier`) are added to the processed dataset to preserve signal without dropping rows.
-
-## AI Assistance Disclosure
-AI tools were used for learning, debugging, and testing assistance. All code and analysis were reviewed and validated by the author.
-
-## Submission Checklist
-- [ ] Run `python src/data_analysis.py` and confirm `reports/data_quality_report.md` updated
-- [ ] Run `python src/process_data.py` to refresh `data/processed/ibm_hr_attrition_processed.csv`
-- [ ] Run `python src/eda_visuals.py` and `python src/interactive_visuals.py`
-- [ ] Run `python src/modeling.py --grid-search --ablation` and `python src/model_visuals.py`
-- [ ] Re-run notebooks (`notebooks/01_*.ipynb` to `notebooks/04_*.ipynb`)
-- [ ] Verify `reports/results/` contains metrics, grid search, and ablation files
-- [ ] Update README + project.md if any metrics changed
